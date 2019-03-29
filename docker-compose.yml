@@ -24,6 +24,8 @@ services:
     depends_on:
       - discovery
       - config
+    ports:
+      - 8081:8081  
   school-ui:
     image: developer.okta.com/microservice-docker-school-ui:0.0.1-SNAPSHOT
     environment:
